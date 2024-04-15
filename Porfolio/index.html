@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Personal Portfolio </title>
+    <style>
+        * {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* .main {
+            width: 100%;
+            height: 100vh;
+            background-image: url('bg.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .main img {
+            object-fit: contain;
+            opacity: 0.5;
+            width: 100%;
+            height: 100vh;
+        } */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            align-items: center;
+            position: relative;
+        }
+
+        .navbar::before {
+            content: "";
+            position: absolute;
+            background-color: rgb(207, 107, 70);
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            font-size: 1.1rem;
+        }
+
+        .navbar ul li a {
+            padding: 5px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar ul li a:hover {
+            border-bottom: 2px solid black;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            height: 650px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgb(207, 107, 70);
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 700px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .heading {
+
+            color: white;
+            font-size: 3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            transform: scale(1, 1.3);
+        }
+
+        .about {
+            width: 100%;
+            padding: 78px 0px;
+            background-color: white;
+        }
+
+        .about img {
+            height: auto;
+            width: 350px;
+        }
+
+        .about-text {
+            width: 550px;
+        }
+
+        .about-text h1 {
+            font-size: 70px;
+            margin-bottom: 50px;
+        }
+
+        .about-text h5 {
+            font-size: 25px;
+            margin-bottom: 35px;
+        }
+
+        .about-text p {
+            letter-spacing: 1px;
+            font-size: 18px;
+            /* margin-bottom: 45px; */
+
+        }
+
+        .aboutmain {
+            width: 1130px;
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .contact-section {
+            /* background: #313840; */
+            background-color: rgb(207, 107, 70);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .inner-width {
+            max-width: 600px;
+            margin: auto;
+            padding: 0 30px;
+        }
+
+        .contact-section h1 {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 400;
+        }
+
+        .name,
+        .email,
+        .message {
+            background: none;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid;
+            color: white;
+            padding: 10px 6px;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .name {
+            float: left;
+            width: 270px;
+
+        }
+
+        .email {
+            float: right;
+            width: 270px;
+        }
+
+        .message {
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        .touch {
+            margin-top: 40px;
+            /* border: 1px solid #70a1ff; */
+            border: none;
+            padding: 12px 40px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .touch:hover {
+            background: orange;
+            color: white;
+        }
+
+        .icons {
+            height: 100px;
+            line-height: 100px;
+            font-size: 25px;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .fa-brands {
+            color: rgb(207, 107, 70);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <img src="sumit.jpeg">
+    </div> -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#portfolio"> Portfolio </a></li>
+            <li><a href="#eduction"> Education </a></li>
+            <li><a href="#about"> About Me </a></li>
+            <li><a href="#contact"> Contact Me </a></li>
+        </ul>
+    </div>
+
+    <section id="home">
+        <h1 class="heading"> Hey, I AM <br> Kumar Sumit</h1>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="aboutmain">
+            <img src="sumit.jpeg">
+            <div class="about-text">
+                <h1>
+                    About Me
+                </h1>
+                <h5> Developer </h5>
+                <p> We are passionate frontend web developers dedicated to crafting engaging online experiences. With
+                    expertise in HTML, CSS, and JavaScript, we transform ideas into interactive websites. Our focus on
+                    clean code and user-centric design ensures seamless functionality and captivating visuals. Let us
+                    bring your digital vision to life.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="contact-section">
+            <div class="inner-width">
+                <h1 id="contact">Get In Touch With Us</h1>
+                <input type="text" class="name" placeholder="Your Name" required>
+                <input type="email" class="email" placeholder="Your Email">
+                <textarea rows="1" placeholder="Message" class="message"></textarea>
+                <button type="button" class="touch">Get in touch</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="icons">
+            <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/sumit-kumar-pal-86b828298/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
